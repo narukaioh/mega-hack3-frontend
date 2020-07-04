@@ -12,12 +12,12 @@ button {
   &.default {
     color: $primary;
     border: 2px solid $primary;
-    background: $primaryBackground;
+    background: $background;
     box-shadow:  3px 3px 10px $primary, -3px -3px 10px #ffffff;
 
     &:hover {
       background: $primary;
-      color: $primaryBackground;
+      color: $background;
     }
 
     &:active {

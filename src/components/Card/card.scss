@@ -1,3 +1,11 @@
+@import '../variables.scss';
+
 .card-box {
-  
+  border-radius: 16px;
+  background: $background;
+  box-shadow:  6px 6px 14px #a9acae, -6px -6px 14px #FFF;
+  padding: 2rem;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 15px;
 }
