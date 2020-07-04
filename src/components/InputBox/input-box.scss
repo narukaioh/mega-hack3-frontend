@@ -1,8 +1,11 @@
 .input-box {
   margin-bottom: 15px;
+  label, p {
+    margin-bottom: 10px;
+  }
+  
   label {
     display: block;
-    margin-bottom: 3px;
     text-transform: capitalize;
     font-weight: 500;
   }
