@@ -4,7 +4,13 @@
   border-radius: 16px;
   background: $background;
   box-shadow:  6px 6px 14px #a9acae, -6px -6px 14px #FFF;
-  padding: 2rem;
+  padding: 25px;
   width: 100%;
   margin-bottom: 15px;
+
+  h1 {
+    font-weight: 800;
+    font-size: 19px;
+    margin-bottom: 20px
+  }
 }
