@@ -5,7 +5,7 @@ import { InputBox } from '../InputBox/InputBox'
 export const Input = ({ label, placeholder }) => {
   return (
     <InputBox label={label}>
-      <input placeholder={placeholder} />
+      <input type="text" placeholder={placeholder} />
     </InputBox>
   )
 }
