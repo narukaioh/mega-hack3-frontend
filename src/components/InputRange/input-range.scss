@@ -1,0 +1,80 @@
+@import '../variables.scss';
+
+.range-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 35px;
+  border: 1px solid #999;
+  height: 7px;
+  border-radius: 3px;
+  z-index: 1;
+
+  input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 99%;
+    height: 5px;
+    outline: none;
+    border-radius: 3px;
+    position: absolute;
+    top: -2px;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      position: relative;
+      z-index: 5;
+    }
+    
+  }
+
+  .range-selector { 
+    width: 13px;
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(50%);
+    z-index: 3;
+
+    .range-button {
+      width: 13px;
+      height: 13px;
+      border-radius: 100px;
+      padding: 0;
+      border: 1px solid #FFF;
+      background-color: $inputRange;
+      position: absolute;
+      bottom: -2px;
+      box-shadow: 1px 1px 10px #999;
+      z-index: 4;
+    }
+
+    .range-value {
+      background: url(/static/media/tooltip.a8bdb9c0.svg) center no-repeat;
+      display: block;
+      text-align: center;
+      width: 40px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      position: absolute;
+      bottom: -22px;
+      left: -14px;
+    }
+  }
+
+  .range-progress {
+    width: 50%;
+    height: 8px;
+    background: $inputRange;
+    position: absolute;
+    border-radius: 3px;
+    top: -1px;
+    left: -1px;
+    z-index: 2;
+  }
+}
