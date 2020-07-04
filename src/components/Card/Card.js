@@ -1,6 +1,11 @@
 import React from 'react'
 import './card.scss'
 
-export const Card = ({ children }) => {
-  return <div className="card-box">{children}</div>
+export const Card = ({ children, title }) => {
+  return (
+    <section className="card-box">
+      <h1>{title}</h1>
+      {children}
+    </section>
+  )
 }
