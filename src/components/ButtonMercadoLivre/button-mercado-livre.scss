@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+button.mercado-livre-button {
+  color: $mercadoLivreBlue;
+  border: 2px solid transparent;
+  background: $mercadoLivreYellow;
+  box-shadow:  3px 3px 10px #DDD, -3px -3px 10px #ffffff;
+
+  &:active {
+    box-shadow:  2px 2px 4px #DDD, -2px -2px 4px #ffffff;
+  }
+}
