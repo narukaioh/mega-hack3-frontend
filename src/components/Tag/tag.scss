@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.needs-tag {
+  padding: 10px;
+  box-shadow: 0px 2px 8px #0E0E0E1A;
+  border: 0.75px solid #C8D4D8;
+  border-radius: 150px;
+  font-weight: 500;
+  color: $tagFont;
+  font-size: 17px;
+}
