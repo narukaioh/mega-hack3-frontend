@@ -5,7 +5,7 @@ import { InputBox } from '../InputBox/InputBox'
 export const InputIcon = ({ label, icon, placeholder }) => {
   return (
     <InputBox label={label}>
-      <div class="input-icon-container">
+      <div className="input-icon-container">
         <span><img src={icon} alt="icon" /></span>
         <input type="text" placeholder={placeholder} />
       </div>
