@@ -1,1 +1,27 @@
-.default {}
+@import '../variables.scss';
+
+button {
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 100px;
+  margin-bottom: 15px;
+  outline: none;
+  cursor: pointer;
+
+  &.default {
+    color: $primary;
+    border: 2px solid $primary;
+    background: $primaryBackground;
+    box-shadow:  3px 3px 10px $primary, -3px -3px 10px #ffffff;
+
+    &:hover {
+      background: $primary;
+      color: $primaryBackground;
+    }
+
+    &:active {
+      box-shadow:  2px 2px 4px $primary, -2px -2px 4px #ffffff;
+    }
+  }
+}
