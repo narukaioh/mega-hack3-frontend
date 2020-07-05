@@ -4,10 +4,18 @@
       "id": 1,
       "name": "Ong 1",
       "image": "http://mlb-s2-p.mlstatic.com/748913-MLB41947535255_052020-I.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem odit quis quaerat. In dolorem praesentium velit ea esse consequuntur cum fugit sequi voluptas ut possimus voluptatibus deserunt nisi eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptates vel dolorum autem ex repudiandae iste quasi. Minima explicabo qui necessitatibus porro nihil aliquid deleniti ullam repudiandae dolores corrupti eaque",
+      "description": "Crescem em famílias que não têm acesso a direitos básicos como alimentação, saúde, saneamento e emprego decente. A Aldeias Infantis trabalha para mudar esta realidade, por meio de projetos de fortalecimento de famílias, com formação profissional e inserção ao mercado de trabalho. E proporciona, diariamente, atividades educativas para milhares de crianças e adolescentes.",
       "tags": ["fraldas", "sabão", "conta de luz", "Pokemon", "Pikachu"],
       "locale": "São Paulo",
-      "subject": "Crianças"
+      "subject": "Crianças",
+      "address": {
+        "street": "Rua Fulano Silva",
+        "number": "234",
+        "cep": "59999-000",
+        "neighborhood": "Juscelino K.",
+        "city": "São Paulo",
+        "state": "SP"        
+      }
     },
     {
       "id": 2,
@@ -16,7 +24,15 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem odit quis quaerat. In dolorem praesentium velit ea esse consequuntur cum fugit sequi voluptas ut possimus voluptatibus deserunt nisi eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptates vel dolorum autem ex repudiandae iste quasi. Minima explicabo qui necessitatibus porro nihil aliquid deleniti ullam repudiandae dolores corrupti eaque",
       "tags": ["fraldas", "sabão", "conta de luz", "Pokemon", "Pikachu"],
       "locale": "São Paulo",
-      "subject": "Crianças"
+      "subject": "Crianças",
+      "address": {
+        "street": "Rua Fulano Silva",
+        "number": "234",
+        "cep": "59999-000",
+        "neighborhood": "Juscelino K.",
+        "city": "São Paulo",
+        "state": "SP"        
+      }
     }    
   ]
 }
