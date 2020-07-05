@@ -1,0 +1,73 @@
+@import '../../components/variables.scss';
+
+.ong-page {
+  .ong-page-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 18px;
+    margin-top: 15px;
+  }
+  
+  .ong-button-box {
+    display: flex;
+    justify-content: space-around;
+    &.billets {
+      border: 1px solid #FC8000;
+      padding-bottom: 5px;
+      padding-top: 20px;
+      border-radius: 15px;
+      position: relative;
+
+      .label {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: -8px;
+
+        span {
+          background: #fff;
+          color: #FC8000;
+          font-weight: 600;
+          font-size: 12px;
+          padding: 0px 15px;
+        }
+      }
+    }
+  }
+
+
+  a {
+    font-size: 14px;
+  }
+
+  h2.ong-page-title {
+    font-weight: 800;
+    font-size: 13px;
+  }
+
+  h3.ong-page-title {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .ong-box-date {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      width: 50%;
+      span {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        &.title {
+          font-weight: 500;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

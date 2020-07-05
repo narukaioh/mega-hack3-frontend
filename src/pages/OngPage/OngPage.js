@@ -1,122 +1,164 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Button } from '../../components/Button/Button'
-import { Card } from '../../components/Card/Card'
-import { CardIcon } from '../../components/CardIcon/CardIcon'
-import { Input } from '../../components/Input/Input'
-import { InputBox } from '../../components/InputBox/InputBox'
-import { Tag } from '../../components/Tag/Tag'
-import { Tags } from '../../components/Tags/Tags'
-import Shop from '../../icons/shop-icon.svg'
-import Document from '../../icons/document.svg'
-import TagIcon from '../../icons/tag-icon.svg'
-import FileUpload from '../../icons/file-upload-icon.svg'
-import { ButtonSecondary } from '../../components/ButtonSecondary/ButtonSecondary'
-import { InputRange } from '../../components/InputRange/InputRange'
-import { InputIcon } from '../../components/InputIcon/InputIcon'
-import { TextArea } from '../../components/TextArea/TextArea'
-import { UploadFile } from '../../components/UploadFile/UploadFile'
-import { ButtonMercadoLivre } from '../../components/ButtonMercadoLivre/ButtonMercadoLivre'
-import { CheckButton } from '../../components/CheckButton/CheckButton'
-import { Select } from '../../components/Select/Select'
-import { ButtonDefault } from '../../components/ButtonDefault/ButtonDefault'
-import { ButtonLight } from '../../components/ButtonLight/ButtonLight'
-import { getONG } from '../../services/getONGs';
+import { Button } from "../../components/Button/Button";
+import { Card } from "../../components/Card/Card";
+import { CardIcon } from "../../components/CardIcon/CardIcon";
+import { Input } from "../../components/Input/Input";
+import { InputBox } from "../../components/InputBox/InputBox";
+import { Tag } from "../../components/Tag/Tag";
+import { Tags } from "../../components/Tags/Tags";
+import Shop from "../../icons/shop-icon.svg";
+import Document from "../../icons/document.svg";
+import TagIconOrange from "../../icons/tag-icon-orange.svg";
+import FileUpload from "../../icons/file-upload-icon.svg";
+import { ButtonSecondary } from "../../components/ButtonSecondary/ButtonSecondary";
+import { InputRange } from "../../components/InputRange/InputRange";
+import { InputIcon } from "../../components/InputIcon/InputIcon";
+import { TextArea } from "../../components/TextArea/TextArea";
+import { UploadFile } from "../../components/UploadFile/UploadFile";
+import { ButtonMercadoLivre } from "../../components/ButtonMercadoLivre/ButtonMercadoLivre";
+import { CheckButton } from "../../components/CheckButton/CheckButton";
+import { Select } from "../../components/Select/Select";
+import { ButtonDefault } from "../../components/ButtonDefault/ButtonDefault";
+import { ButtonLight } from "../../components/ButtonLight/ButtonLight";
+import { getONG } from "../../services/getONGs";
+import { NeedsHeader } from "../../components/Needs/NeedsHeader";
+import { Address } from "../../components/Address/Address";
+import { IconLabel } from "../../components/IconLabel/IconLabel";
+import "./ong-page.scss";
+import { Product } from "../../components/Product/Product";
 
 export const OngPage = () => {
-  const input = ''
-  const [ong, setONG] = useState({})
+  const input = "";
+  const [ong, setONG] = useState({
+    id: "",
+    name: "",
+    image: "",
+    description: "",
+    tags: [],
+    locale: "",
+    subject: "",
+    address: {
+      street: "",
+      number: "",
+      cep: "",
+      neighborhood: "",
+      city: "",
+      state: "",
+    },
+    needs: [{ product: { image: "", title: "", price: "" } }],
+    billets: [],
+  });
   const { id } = useParams();
 
   const fetchONG = async () => {
-    const ONG = await getONG(id)
-    setONG(ONG)
-  }
+    const ONG = await getONG(id);
+    setONG(ONG);
+  };
 
   useEffect(() => {
-    fetchONG()
-  }, [input])
+    fetchONG();
+  }, [input]);
 
-  const options = [
-    {
-      value: 'Option label 1',
-      label: 'Option label 1'
-    },
-    {
-      value: 'Option label 2',
-      label: 'Option label 2'
-    }
-  ]
+  const {
+    image,
+    name,
+    description,
+    address,
+    subject,
+    link,
+    tags,
+    needs,
+    billets,
+  } = ong;
 
   return (
-    <div className="container">
-
-      <Card title="Card title component">
-
-        <ButtonDefault label="Button Default" />
-
-        <br />
-
-        <ButtonLight label="Button Light" />
-        
-        <br />
-
-        <Button label="Button Secondary" />
-
-        <br />
-
-        <ButtonSecondary label="Button Primary" />
-
-        <br />
-
-        <ButtonMercadoLivre label="Button Mercado Livre" />
-
-        <br />
-
-        <UploadFile label="UploadFile label" />
-
-        <br />
-
-        <Select label="Select label" options={options} />
-
-        <InputRange label="InputRange label" subtitle="InputRange subtitle" />
-
-        <InputIcon icon={TagIcon} label="InputIcon label" placeholder="InputIcon placeholder" />
-        
-        <InputIcon icon={FileUpload} label="InputIcon label" placeholder="InputIcon placeholder" />
-        
-        <Input label="Input label" placeholder="Input placeholder" />
+    <div className="container ong-page">
+      <Card>
+        <NeedsHeader content={{ image, name, description }} />
+        <IconLabel icon={TagIconOrange} label={subject} />
+        <p className="ong-page-description">{description}</p>
+        <Address content={{ address }} />
+        <IconLabel icon={FileUpload}>
+          <a href={link} target="_blank">
+            {link}
+          </a>
+        </IconLabel>
       </Card>
 
-      <Button label="Button Secondary" />
-      <ButtonSecondary label="Button Primary" />
-
-      <CardIcon icon={Shop} alt="Shop" title="Card Icon Title component">
-        <InputBox subtitle="InputBox subtitle" label="InputBox label">
-        </InputBox>
-      </CardIcon>
-
-      <CardIcon icon={Document} alt="Shop">
-        <TextArea label="TextArea component" placeholder="TextArea placeholder component" />
+      <Card>
+        <h2 className="ong-page-title">Necessidades</h2>
+        <p className="ong-page-description">
+          Essas são as necessidades que a instituição pede contribuição. Caso
+          clique numa delas verá um lista com todos que tem esta mesma
+          necessidade.
+        </p>
         <Tags>
-          <Tag label="Tag component 1" />
-          <Tag label="Tag component 2" />
-          <Tag label="Tag component 3" />
+          {tags.map((tag) => (
+            <Tag label={tag} />
+          ))}
         </Tags>
-      </CardIcon>
+      </Card>
 
-      <hr />
+      {needs.map((need) => (
+        <CardIcon icon={Shop} alt="Shop">
+          <h3 className="ong-page-title">{need.title}</h3>
+          <p className="ong-page-description">{need.description}</p>
+          <div className="ong-box-date">
+            <div>
+              <span className="title">Vencimento</span>
+              <span>{need.date}</span>
+            </div>
+            <div>
+              <span className="title">Quantidade</span>
+              <span>{need.quantity}</span>
+            </div>
+          </div>
+          <Product content={need.product} />
+          <div className="ong-button-box">
+            <a href={need.link} className="btn small secondary" target="_blank">
+              Fazer a diferença
+            </a>
+          </div>
+        </CardIcon>
+      ))}
 
-      <div className="checkbox-group">
-        <CheckButton checked={true}>
-          CheckButton label 1
-        </CheckButton>
-        <CheckButton>
-          <span>CheckButton label 2 <a href="#">Link</a></span>
-        </CheckButton>
-      </div>
+      {billets.map((bilet) => (
+        <CardIcon icon={Document} alt="Shop">
+          <h3 className="ong-page-title">{bilet.title}</h3>
+          <p className="ong-page-description">{bilet.description}</p>
+          <div className="ong-box-date">
+            <div>
+              <span className="title">Vencimento</span>
+              <span>{bilet.date}</span>
+            </div>
+            <div>
+              <span className="title">Valor</span>
+              <span>{bilet.value}</span>
+            </div>
+          </div>
+          <div className="ong-button-box billets">
+            <div className="label">
+              <span>Faça a diferença</span>
+            </div>
+            <a
+              href={bilet.recurrence}
+              className="btn small secondary"
+              target="_blank"
+            >
+              Mensal
+            </a>
 
+            <a
+              href={bilet.only}
+              className="btn small secondary"
+              target="_blank"
+            >
+              Dessa vez
+            </a>
+          </div>
+        </CardIcon>
+      ))}
     </div>
   );
-}
-
+};
