@@ -1,0 +1,23 @@
+@import '../variables.scss';
+
+button, .btn {
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 100px;
+  margin-bottom: 15px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+
+  &.light {
+    color: $buttonDefault;
+    border: 1px solid #C8D4D8;
+    background: #fff;
+    box-shadow:  3px 3px 10px #999, -3px -3px 10px #ffffff;
+
+    &:active {
+      box-shadow:  2px 2px 4px #999, -2px -2px 4px #ffffff;
+    }
+  }
+}
