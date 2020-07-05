@@ -18,6 +18,7 @@ import { UploadFile } from '../../components/UploadFile/UploadFile'
 import { ButtonMercadoLivre } from '../../components/ButtonMercadoLivre/ButtonMercadoLivre'
 import { CheckButton } from '../../components/CheckButton/CheckButton'
 import { Select } from '../../components/Select/Select'
+import { ButtonDefault } from '../../components/ButtonDefault/ButtonDefault'
 
 export const ComponentsPage = () => {
 
@@ -36,6 +37,11 @@ export const ComponentsPage = () => {
     <div className="container">
 
       <Card title="Card title component">
+
+        <ButtonDefault label="Button Default" />
+        
+        <br />
+
         <Button label="Button Secondary" />
 
         <br />
