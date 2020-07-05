@@ -74,7 +74,7 @@ export const OngPage = () => {
       </Card>
 
       <Card>
-        <h2 className="ong-page-title">Necessidades</h2>
+        <h2 className="page-title">Necessidades</h2>
         <p className="ong-page-description">
           Essas são as necessidades que a instituição pede contribuição. Caso
           clique numa delas verá um lista com todos que tem esta mesma
@@ -89,7 +89,7 @@ export const OngPage = () => {
 
       {needs.map((need) => (
         <CardIcon icon={Shop} alt="Shop">
-          <h3 className="ong-page-title">{need.title}</h3>
+          <h3 className="page-title">{need.title}</h3>
           <p className="ong-page-description">{need.description}</p>
           <div className="ong-box-date">
             <div>
@@ -112,7 +112,7 @@ export const OngPage = () => {
 
       {billets.map((bilet) => (
         <CardIcon icon={Document} alt="Shop">
-          <h3 className="ong-page-title">{bilet.title}</h3>
+          <h3 className="page-title">{bilet.title}</h3>
           <p className="ong-page-description">{bilet.description}</p>
           <div className="ong-box-date">
             <div>

@@ -3,14 +3,12 @@
 button, .btn {
   &.secondary {
     color: $background;
-    border: 2px solid transparent;
-    background: $primary;
+    background: $backgroundPrimary;
     box-shadow:  3px 3px 10px $primary, -3px -3px 10px #ffffff;
 
     &:hover {
       background: $background;
       color: $primary;
-      border-color: $primary;
     }
 
     &:active {
@@ -20,7 +18,7 @@ button, .btn {
 
   &.small {
     font-size: 12px;
-    padding: 5px 15px;
+    padding: 10px 15px;
     font-weight: 600;
   }
 }
