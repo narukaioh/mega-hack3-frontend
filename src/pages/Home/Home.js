@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import './home.scss'
-import { getONGs } from '../../services/ongs'
+import { getONGs, searchONGs } from '../../services/ongs'
 import { NavLink } from 'react-router-dom'
 import { Search } from '../../components/Search/Search'
 import { Needs } from '../../components/Needs/Needs'
 
 export const Home = () => {
   
-  const [needId, setNeedId] = useState([])
-  const [needsList, setNeedsList] = useState([])
-
-  const fetchAllONGs = async () => {
-    const needs = await getONGs()
-    setNeedsList(needs)
-  }
+  const [ongs, setONGs] = useState([])
 
   useEffect(() => {
-    fetchAllONGs()
-  }, [needId])
+    getONGs().then(res => setONGs(res))
+  }, [])
+
+  const handlerSearch = (e) => {
+    searchONGs(e.target.value).then(res => {
+      console.log(res)
+      setONGs(res)
+    })
+  }
 
   return (
     <div>
@@ -31,9 +32,14 @@ export const Home = () => {
         </div>
       </header>
       <section className="content">
-        <Search placeholder="Causa, local, nome da instituição" />
+
+        <Search 
+          onChange={handlerSearch.bind(this)} 
+          placeholder="Causa, local, nome da instituição" 
+        />
+        
         <ul>
-          {needsList.map(item => <Needs content={item} />)}
+          {ongs.map((ong, i) => <Needs key={i} content={ong} />)}
         </ul>
       </section>
     </div>
