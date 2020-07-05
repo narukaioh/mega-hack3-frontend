@@ -8,11 +8,11 @@ export const DonatePage = () => {
   return (
     <div className="container donate-page">
       <Card>
-        <h2 className="page-title">Necessidades</h2>
+        <h2 className="page-title">Agradecemos a Contribuição</h2>
         <p className="page-description">
-          Essas são as necessidades que a instituição pede contribuição. Caso clique numa delas verá um lista com todos que tem esta mesma necessidade.
+          Coloque o identificador da compra para podermos garantir a quantidade e a data de entrega.
         </p>
-        <Input label="Identificador de compra" placeholder="Digite aqui" />
+        <Input label="Identificador de compra" placeholder="Ex.: #2312345" />
         <div className="donate-footer">
           <ButtonSecondary label="Salvar" />
         </div>
