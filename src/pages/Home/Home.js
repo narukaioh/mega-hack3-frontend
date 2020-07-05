@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './home.scss'
-import { getONGs } from '../../services/getONGs'
+import { getONGs } from '../../services/ongs'
 import { NavLink } from 'react-router-dom'
 import { Search } from '../../components/Search/Search'
 import { Needs } from '../../components/Needs/Needs'

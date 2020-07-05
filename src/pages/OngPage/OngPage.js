@@ -8,7 +8,7 @@ import Shop from "../../icons/shop-icon.svg";
 import Document from "../../icons/document.svg";
 import TagIconOrange from "../../icons/tag-icon-orange.svg";
 import FileUpload from "../../icons/file-upload-icon.svg";
-import { getONG } from "../../services/getONGs";
+import { getONG } from "../../services/ongs";
 import { NeedsHeader } from "../../components/Needs/NeedsHeader";
 import { Address } from "../../components/Address/Address";
 import { IconLabel } from "../../components/IconLabel/IconLabel";
