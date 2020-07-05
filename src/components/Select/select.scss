@@ -1,0 +1,32 @@
+.select-container {
+  margin-bottom: 15px;
+  position: relative;
+  border: 1px solid #D0D0D0;
+  border-radius: 2px;
+  display: flex;
+  height: 44px;
+  align-items: center;
+  padding: 13px;
+
+  select {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    color: #282828;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .select-display-value {
+    width: calc(100% - 25px)
+  }
+
+  .select-chevron-bottom {
+    width: 25px;
+    padding : 13px;
+    border-left: 1px solid #D0D0D0;
+  }
+}

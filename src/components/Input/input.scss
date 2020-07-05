@@ -1,13 +1,15 @@
 input[type=text],
 input[type=passwords],
-input[type=email], {
+input[type=email],
+select {
   width: 100%;
 }
 
 input[type=text],
 input[type=passwords],
 input[type=email],
-textarea {
+textarea,
+select {
   border: 1px solid #D0D0D0;
   border-radius: 2px;
   padding: 13px;
