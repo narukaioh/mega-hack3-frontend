@@ -58,6 +58,14 @@ export const RegisterONGPage = () => {
       ...state,
       [evt.target.name]: value,
     });
+    console.log(state)
+  }
+
+  const [length, setLength] = useState(0)
+
+  const handlerOnDescriptionChange = (e) => {
+    setLength(e.target.value.length)
+    handleChange(e)
   }
 
   return (
@@ -72,7 +80,7 @@ export const RegisterONGPage = () => {
           <Input onChange={handleChange.bind(this)} name="name" label="Nome da instituição*" />
         </div>
         <InputIcon onChange={handleChange.bind(this)} name="cause" icon={TagIcon} label="Causa/assunto da ONG*" />
-        <TextArea onChange={handleChange.bind(this)} name="description" label="Descrição*" />
+        <TextArea length={length} onChange={handlerOnDescriptionChange.bind(this)} name="description" label="Descrição*" />
         <Input onChange={handleChange.bind(this)} name="email" label="Email*" />
         <div className="cep-state">
           <Input onChange={handleChange.bind(this)} name="cep" label="CEP*" />
@@ -115,7 +123,7 @@ export const RegisterONGPage = () => {
       <hr />
 
       <ButtonSecondary label="Salvar" />
-      
+
       {/* 
       <Card title="Escolher produtos">
         <InputBox
