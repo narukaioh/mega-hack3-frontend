@@ -5,7 +5,13 @@
       "name": "Ong 1",
       "image": "http://mlb-s2-p.mlstatic.com/748913-MLB41947535255_052020-I.jpg",
       "description": "Crescem em famílias que não têm acesso a direitos básicos como alimentação, saúde, saneamento e emprego decente. A Aldeias Infantis trabalha para mudar esta realidade, por meio de projetos de fortalecimento de famílias, com formação profissional e inserção ao mercado de trabalho. E proporciona, diariamente, atividades educativas para milhares de crianças e adolescentes.",
-      "tags": ["fraldas", "sabão", "conta de luz", "Pokemon", "Pikachu"],
+      "tags": [
+        "fraldas",
+        "sabão",
+        "conta de luz",
+        "Pokemon",
+        "Pikachu"
+      ],
       "locale": "São Paulo",
       "subject": "Crianças",
       "address": {
@@ -14,15 +20,66 @@
         "cep": "59999-000",
         "neighborhood": "Juscelino K.",
         "city": "São Paulo",
-        "state": "SP"        
-      }
+        "state": "SP"
+      },
+      "link": "https://google.com.br/",
+      "needs": [
+        {
+          "title": "Fraldas",
+          "quantity": 100,
+          "link": "https://www.mercadolivre.com.br/",
+          "date": "10/08/2020",
+          "description": "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas.",
+          "product": {
+            "title": "Fralda Pampers",
+            "price": "R$ 30,00",
+            "image": "http://mlb-s2-p.mlstatic.com/748913-MLB41947535255_052020-I.jpg"
+          }
+        },
+        {
+          "title": "Fraldas 2",
+          "quantity": 50,
+          "link": "https://www.mercadolivre.com.br/",
+          "date": "10/08/2020",
+          "product": {
+            "title": "Fralda Pampers",
+            "price": "R$ 30,00",
+            "image": "http://mlb-s2-p.mlstatic.com/748913-MLB41947535255_052020-I.jpg"
+          },
+          "description": "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas."
+        }
+      ],
+      "billets": [
+        {
+          "title": "Conta de Luz",
+          "value": "R$ 500,03",
+          "recurrency": "",
+          "only": "",
+          "date": "10/08/2020",
+          "description": "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
+        },
+        {
+          "title": "Conta de Água",
+          "value": "R$ 50,00",
+          "recurrency": "",
+          "only": "", 
+          "date": "10/08/2020",
+          "description": "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
+        }
+      ]
     },
     {
       "id": 2,
       "name": "Ong 2",
       "image": "http://mlb-s2-p.mlstatic.com/748913-MLB41947535255_052020-I.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem odit quis quaerat. In dolorem praesentium velit ea esse consequuntur cum fugit sequi voluptas ut possimus voluptatibus deserunt nisi eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptates vel dolorum autem ex repudiandae iste quasi. Minima explicabo qui necessitatibus porro nihil aliquid deleniti ullam repudiandae dolores corrupti eaque",
-      "tags": ["fraldas", "sabão", "conta de luz", "Pokemon", "Pikachu"],
+      "tags": [
+        "fraldas",
+        "sabão",
+        "conta de luz",
+        "Pokemon",
+        "Pikachu"
+      ],
       "locale": "São Paulo",
       "subject": "Crianças",
       "address": {
@@ -31,8 +88,39 @@
         "cep": "59999-000",
         "neighborhood": "Juscelino K.",
         "city": "São Paulo",
-        "state": "SP"        
-      }
-    }    
+        "state": "SP"
+      },
+      "needs": [
+        {
+          "title": "Fraldas",
+          "quantity": 100,
+          "date": "10/08/2020",
+          "product": {
+            "title": "Fralda Pampers",
+            "price": "R$ 30,00",
+            "image": "http://mlb-s2-p.mlstatic.com/748913-MLB41947535255_052020-I.jpg"
+          },
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem odit quis quaerat. In dolorem praesentium velit ea esse consequuntur cum fugit sequi voluptas ut possimus voluptatibus deserunt nisi eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptates vel dolorum autem ex repudiandae iste quasi. Minima explicabo qui necessitatibus porro nihil aliquid deleniti ullam repudiandae dolores corrupti eaque"
+        }
+      ],
+      "billets": [
+        {
+          "title": "Conta de Luz",
+          "value": "R$ 500,03",
+          "date": "10/08/2020",
+          "recurrency": "",
+          "only": "", 
+          "description": "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
+        },
+        {
+          "title": "Conta de Água",
+          "value": "R$ 50,00",
+          "date": "10/08/2020",
+          "recurrency": "",
+          "only": "", 
+          "description": "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
+        }
+      ]
+    }
   ]
 }
