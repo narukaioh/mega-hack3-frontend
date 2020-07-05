@@ -1,22 +1,20 @@
-import React from 'react'
-import { Button } from './components/Button/Button'
-import { Card } from './components/Card/Card'
-import { Input } from './components/Input/Input'
-import { InputBox } from './components/InputBox/InputBox'
+import React from 'react';
+import { ROUTES_CONFIG } from './routes/config';
+import Router from './routes/Router';
+import './components/style.scss';
+import * as serviceWorker from './serviceWorker';
 
 function App() {
   return (
-    <div>
-      <Card title="Informações da ONG">
-        <Button label="Adicionar outro produto" />
-        <Input label="Nome" placeholder="Ex.: Fralda, fogão, sabão, conta de luz" />
-      </Card>
-      <Card>
-        <InputBox subtitle="Digite aqui o seu nome completo por favor!" label="Nome">
-        </InputBox>
-      </Card>
-    </div>
+    <>
+      <Router routes={ROUTES_CONFIG} />
+    </>
   );
 }
 
 export default App;
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
