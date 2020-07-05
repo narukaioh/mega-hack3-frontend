@@ -1,18 +1,20 @@
 @import '../variables.scss';
 
-button.secondary {
-  color: $background;
-  border: 2px solid transparent;
-  background: $primary;
-  box-shadow:  3px 3px 10px $primary, -3px -3px 10px #ffffff;
+button, .btn {
+  &.secondary {
+    color: $background;
+    border: 2px solid transparent;
+    background: $primary;
+    box-shadow:  3px 3px 10px $primary, -3px -3px 10px #ffffff;
 
-  &:hover {
-    background: $background;
-    color: $primary;
-    border-color: $primary;
-  }
+    &:hover {
+      background: $background;
+      color: $primary;
+      border-color: $primary;
+    }
 
-  &:active {
-    box-shadow:  2px 2px 4px $primary, -2px -2px 4px #ffffff;
+    &:active {
+      box-shadow:  2px 2px 4px $primary, -2px -2px 4px #ffffff;
+    }
   }
 }
