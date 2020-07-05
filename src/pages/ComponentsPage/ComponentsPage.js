@@ -19,6 +19,7 @@ import { ButtonMercadoLivre } from '../../components/ButtonMercadoLivre/ButtonMe
 import { CheckButton } from '../../components/CheckButton/CheckButton'
 import { Select } from '../../components/Select/Select'
 import { ButtonDefault } from '../../components/ButtonDefault/ButtonDefault'
+import { ButtonLight } from '../../components/ButtonLight/ButtonLight'
 
 export const ComponentsPage = () => {
 
@@ -39,6 +40,10 @@ export const ComponentsPage = () => {
       <Card title="Card title component">
 
         <ButtonDefault label="Button Default" />
+
+        <br />
+
+        <ButtonLight label="Button Light" />
         
         <br />
 
