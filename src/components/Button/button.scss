@@ -10,7 +10,7 @@ button {
   cursor: pointer;
   font-family: "Montserrat";
 
-  &.default {
+  &.primary {
     color: $primary;
     border: 2px solid $primary;
     background: $background;
