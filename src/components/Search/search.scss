@@ -1,0 +1,19 @@
+.search-container {
+  background: #fff;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+  
+  input[type=text] {
+    width: calc(100% - 40px);
+    background: none;
+    border: none;
+  }
+
+  img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+  }
+}
