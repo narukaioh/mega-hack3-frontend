@@ -15,7 +15,6 @@ export const Home = () => {
 
   const handlerSearch = (e) => {
     searchONGs(e.target.value).then(res => {
-      console.log(res)
       setONGs(res)
     })
   }

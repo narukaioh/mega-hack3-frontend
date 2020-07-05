@@ -10,9 +10,11 @@ export const Needs = ({ content }) => {
   return (
     <li className="needs-item">
       <NeedsHeader content={{ image, name, description }} />
+      { tags ? 
       <Tags>
         {tags.map(tag => <Tag label={tag} />)}
       </Tags>
+      : '' }
       <NeedsFooter content={{ id, locale, subject }} />
     </li>
   )
