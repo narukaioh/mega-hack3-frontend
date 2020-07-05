@@ -41,6 +41,7 @@ export const RegisterONGPage = () => {
         </div>
         <InputIcon icon={TagIcon} label="Causa/assunto da ONG*" />
         <TextArea label="Descrição*" />
+        <Input label="Email*" />
         <div className="cep-state">
           <Input label="CEP*" />
           <Input label="Estado*" />
