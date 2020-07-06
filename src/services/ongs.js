@@ -21,7 +21,7 @@ export const getONG = async (id) => await get(`ong/${id}`).then(res => {
   return {
     id: ong.id,
     name: ong.name,
-    image: "https://logos.flamingtext.com/City-Logos/Ong-Logo.webp",
+    image: "https://altruismoeficaz.files.wordpress.com/2015/08/crianca3.jpg",
     description: ong.description,
     locale: ong.city,
     subject: ong.cause || "Ong",
