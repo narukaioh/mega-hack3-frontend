@@ -36,25 +36,25 @@ export const getONG = async (id) => await get(`ong/${id}`).then(res => {
     },
     needs: [
       {
-        title: "Fraldas",
+        title: "Kit Com 4 Pacotes Fraldas Pampers Atacado Frete Gratis",
         quantity: 100,
-        link: "https://www.mercadolivre.com.br/",
+        link: "https://produto.mercadolivre.com.br/MLB-1424521706-kit-com-4-pacotes-fraldas-pampers-atacado-frete-gratis-_JM?searchVariation=50074976460&quantity=1#searchVariation=50074976460&position=1&type=item&tracking_id=26a99d68-2c4e-46c8-bea4-d089c7dd7ede",
         date: "10/08/2020",
         description: "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas.",
         product: {
-          title: "Fralda Pampers",
-          price: "R$ 30,00",
+          title: "Kit Com 4 Pacotes Fraldas Pampers Atacado Frete Gratis",
+          price: "R$ 128,00",
           image: "http://mlb-s2-p.mlstatic.com/808351-MLB40762133514_022020-I.jpg"
         }
       },{
-        title: "Fraldas",
+        title: "Fralda Infantil Pampers Confort Sec",
         quantity: 100,
-        link: "https://www.mercadolivre.com.br/",
+        link: "https://produto.mercadolivre.com.br/MLB-1394912193-fralda-infantil-pampers-confort-sec-_JM?quantity=1#origin=supermarket_carousel&from=search-frontend",
         date: "10/08/2020",
         description: "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas.",
         product: {
-          title: "Fralda Pampers",
-          price: "R$ 30,00",
+          title: "Fralda Infantil Pampers Confort Sec",
+          price: "R$ 62,79",
           image: "http://mlb-s2-p.mlstatic.com/808351-MLB40762133514_022020-I.jpg"
         }
       }
@@ -69,8 +69,8 @@ export const getONG = async (id) => await get(`ong/${id}`).then(res => {
         description: "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
       },
       {
-        title: "Conta de Luz",
-        value: "R$ 500,03",
+        title: "Conta de Água",
+        value: "R$ 50,03",
         recurrency: "",
         only: "",
         date: "10/08/2020",

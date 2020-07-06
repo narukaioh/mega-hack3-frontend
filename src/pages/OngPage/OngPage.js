@@ -40,7 +40,6 @@ export const OngPage = () => {
 
   const fetchONG = async () => {
     const ONG = await getONG(id);
-    console.log("---------------", ONG)
     setONG(ONG);
   };
 
