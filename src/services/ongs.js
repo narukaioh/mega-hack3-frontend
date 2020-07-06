@@ -33,8 +33,49 @@ export const getONG = async (id) => await get(`ong/${id}`).then(res => {
       city: ong.city,
       state: ong.state,
     },
-    needs: ong["need_products"],
-    billets: ong["need_bills"],
+    needs: [
+      {
+        title: "Fraldas",
+        quantity: 100,
+        link: "https://www.mercadolivre.com.br/",
+        date: "10/08/2020",
+        description: "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas.",
+        product: {
+          title: "Fralda Pampers",
+          price: "R$ 30,00",
+          image: "http://mlb-s2-p.mlstatic.com/808351-MLB40762133514_022020-I.jpg"
+        }
+      },{
+        title: "Fraldas",
+        quantity: 100,
+        link: "https://www.mercadolivre.com.br/",
+        date: "10/08/2020",
+        description: "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas.",
+        product: {
+          title: "Fralda Pampers",
+          price: "R$ 30,00",
+          image: "http://mlb-s2-p.mlstatic.com/808351-MLB40762133514_022020-I.jpg"
+        }
+      }
+    ],
+    billets: [
+      {
+        title: "Conta de Luz",
+        value: "R$ 500,03",
+        recurrency: "",
+        only: "",
+        date: "10/08/2020",
+        description: "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
+      },
+      {
+        title: "Conta de Luz",
+        value: "R$ 500,03",
+        recurrency: "",
+        only: "",
+        date: "10/08/2020",
+        description: "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
+      }
+    ],
     tags: ong.tags || []
   };
 })
