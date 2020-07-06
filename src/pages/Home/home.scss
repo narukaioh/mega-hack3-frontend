@@ -5,9 +5,15 @@
   nav {
     padding: 30px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
     a {
       margin-left: 20px;
       margin-bottom: 0px;

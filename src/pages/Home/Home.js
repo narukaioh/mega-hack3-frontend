@@ -4,6 +4,7 @@ import { getONGs, searchONGs } from '../../services/ongs'
 import { NavLink } from 'react-router-dom'
 import { Search } from '../../components/Search/Search'
 import { Needs } from '../../components/Needs/Needs'
+import LoweIcon from '../../icons/lowe-icon.svg'
 
 export const Home = () => {
   
@@ -23,8 +24,13 @@ export const Home = () => {
     <div>
       <header className="header-home">
         <nav>
-          <NavLink className="btn default" to="/donate">Sou doador</NavLink>
-          <NavLink className="btn light" to="/ongs">Sou ONG</NavLink>
+          <div>
+            <img src={LoweIcon} alt="logo" />
+          </div>
+          <div>
+            <NavLink className="btn default" to="/donate">Sou doador</NavLink>
+            <NavLink className="btn light" to="/ongs">Sou ONG</NavLink>
+          </div>
         </nav>
         <div className="banner">
           <h1>Doe para ONG com a certeza de que sua doação fez a diferença.</h1>
