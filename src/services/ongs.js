@@ -4,7 +4,7 @@ export const getONGs = async () =>
   await get(`/ongs`).then((res) =>{
     const result = res.ongs[0].map((ong) => {
       return {
-        id: ong,
+        id: ong.id,
         name: ong.name,
         image: ong.logo,
         description: ong.description,
@@ -16,7 +16,28 @@ export const getONGs = async () =>
     return result[0] === null ? [] : result
   })
 
-export const getONG = async (id) => await get(`ong/${id}`)
+export const getONG = async (id) => await get(`ong/${id}`).then(res => {
+  const { ong } = res;
+  return {
+    id: ong.id,
+    name: ong.name,
+    image: "https://logos.flamingtext.com/City-Logos/Ong-Logo.webp",
+    description: ong.description,
+    locale: ong.city,
+    subject: ong.cause,
+    address: {
+      street: ong.address,
+      number: ong.number,
+      cep: ong.cep,
+      neighborhood: "",
+      city: ong.city,
+      state: ong.state,
+    },
+    needs: ong["need_products"],
+    billets: ong["need_bills"],
+    tags: ong.tags || []
+  };
+})
 
 export const postONG = (ong) => {
   const payload = {

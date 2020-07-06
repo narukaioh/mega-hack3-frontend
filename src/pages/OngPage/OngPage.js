@@ -40,6 +40,7 @@ export const OngPage = () => {
 
   const fetchONG = async () => {
     const ONG = await getONG(id);
+    console.log("---------------", ONG)
     setONG(ONG);
   };
 
@@ -62,7 +63,7 @@ export const OngPage = () => {
   return (
     <div className="container ong-page">
       <Card>
-        <NeedsHeader content={{ image, name, description }} />
+        <NeedsHeader content={{ image: "https://logos.flamingtext.com/City-Logos/Ong-Logo.webp", name, description }} />
         <IconLabel icon={TagIconOrange} label={subject} />
         <p className="ong-page-description">{description}</p>
         <Address content={{ address }} />
