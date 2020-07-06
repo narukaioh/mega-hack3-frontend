@@ -113,7 +113,7 @@ export const searchONGs = async (content) =>
   await get(`ongs?search=${content}`).then((res) => {
     const result = res.ongs[0].map((ong) => {
       return {
-        id: ong,
+        id: ong.id,
         name: ong.name,
         image: ong.logo,
         description: ong.description,
