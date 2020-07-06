@@ -24,14 +24,15 @@ export const getONG = async (id) => await get(`ong/${id}`).then(res => {
     image: "https://logos.flamingtext.com/City-Logos/Ong-Logo.webp",
     description: ong.description,
     locale: ong.city,
-    subject: ong.cause,
+    subject: ong.cause || "Ong",
+    link: "http://google.com.br/ongs",
     address: {
-      street: ong.address,
-      number: ong.number,
-      cep: ong.cep,
-      neighborhood: "",
-      city: ong.city,
-      state: ong.state,
+      street: ong.address || "Avenida Paulista",
+      number: ong.number || "88",
+      cep: ong.cep || "99999-999",
+      neighborhood: "Tijuca",
+      city: ong.city || "São Paulo",
+      state: ong.state || "SP",
     },
     needs: [
       {
