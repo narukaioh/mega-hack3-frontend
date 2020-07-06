@@ -17,14 +17,13 @@
 
   .banner {
     height: 355px;
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("../../icons/banner.png") center no-repeat;
     h1 {
       font-size: 25px;
-      font-weight: 500;
+      font-weight: 900;
       width: 50%;
       line-height: 34px;
       color: $primary;
