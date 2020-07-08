@@ -1,6 +1,6 @@
 import React from 'react'
 import './textarea.scss'
-import { InputBox } from '../InputBox/InputBox'
+import { InputBox } from '../../InputBox/InputBox'
 
 export const TextArea = ({ label, placeholder, onChange, name, length }) => {
   

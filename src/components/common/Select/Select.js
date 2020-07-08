@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import ChevronDown from '../../icons/chevron-down-ico.svg'
+import { InputBox } from '../../InputBox/InputBox'
 import './select.scss'
-import ChevronDown from '../../../icons/chevron-down-ico.svg'
-import { InputBox } from '../InputBox/InputBox'
 
 export const Select = ({ options, label, subtitle}) => {
 
@@ -15,8 +15,8 @@ export const Select = ({ options, label, subtitle}) => {
   }
 
   useEffect(() => {
-    setSelectValue(options[0])
-  },{})
+    setSelectValue(options)
+  }, [options])
 
   return (
     <InputBox label={label} subtitle={subtitle}>

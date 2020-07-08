@@ -1,6 +1,6 @@
 import React from 'react'
 import './input-icon.scss'
-import { InputBox } from '../InputBox/InputBox'
+import { InputBox } from '../../InputBox/InputBox'
 
 export const InputIcon = ({ label, icon, placeholder, name, onChange }) => {
   return (
