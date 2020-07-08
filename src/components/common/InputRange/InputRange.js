@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './input-range.scss'
-import { InputBox } from '../../InputBox/InputBox'
+import { InputBox } from '../InputBox/InputBox'
 
 export const InputRange = ({ label, subtitle, name }) => {
 

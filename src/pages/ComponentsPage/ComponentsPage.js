@@ -1,25 +1,27 @@
 import React from 'react'
-import { Button } from '../../components/Button/Button'
-import { Card } from '../../components/Card/Card'
-import { CardIcon } from '../../components/CardIcon/CardIcon'
-import { Input } from '../../components/Input/Input'
-import { InputBox } from '../../components/InputBox/InputBox'
-import { Tag } from '../../components/Tag/Tag'
-import { Tags } from '../../components/Tags/Tags'
+
 import Shop from '../../icons/shop-icon.svg'
 import Document from '../../icons/document.svg'
 import TagIcon from '../../icons/tag-icon.svg'
 import FileUpload from '../../icons/file-upload-icon.svg'
-import { ButtonSecondary } from '../../components/ButtonSecondary/ButtonSecondary'
-import { InputRange } from '../../components/InputRange/InputRange'
-import { InputIcon } from '../../components/InputIcon/InputIcon'
-import { TextArea } from '../../components/TextArea/TextArea'
-import { UploadFile } from '../../components/UploadFile/UploadFile'
-import { ButtonMercadoLivre } from '../../components/ButtonMercadoLivre/ButtonMercadoLivre'
-import { CheckButton } from '../../components/CheckButton/CheckButton'
-import { Select } from '../../components/Select/Select'
-import { ButtonDefault } from '../../components/ButtonDefault/ButtonDefault'
-import { ButtonLight } from '../../components/ButtonLight/ButtonLight'
+
+import { Button } from '../../components/common/Button/Button'
+import { Card } from '../../components/common/Card/Card'
+import { CardIcon } from '../../components/common/CardIcon/CardIcon'
+import { Input } from '../../components/common/Input/Input'
+import { InputBox } from '../../components/common/InputBox/InputBox'
+import { Tag } from '../../components/common/Tag/Tag'
+import { Tags } from '../../components/common/Tags/Tags'
+import { ButtonSecondary } from '../../components/common/ButtonSecondary/ButtonSecondary'
+import { InputRange } from '../../components/common/InputRange/InputRange'
+import { InputIcon } from '../../components/common/InputIcon/InputIcon'
+import { TextArea } from '../../components/common/TextArea/TextArea'
+import { UploadFile } from '../../components/common/UploadFile/UploadFile'
+import { CheckButton } from '../../components/common/CheckButton/CheckButton'
+import { Select } from '../../components/common/Select/Select'
+import { ButtonDefault } from '../../components/common/ButtonDefault/ButtonDefault'
+import { ButtonLight } from '../../components/common/ButtonLight/ButtonLight'
+
 import RegisterForm from '../../forms/register/RegisterForm'
 
 export const ComponentsPage = () => {
@@ -57,10 +59,6 @@ export const ComponentsPage = () => {
         <br />
 
         <ButtonSecondary label="Button Primary" />
-
-        <br />
-
-        <ButtonMercadoLivre label="Button Mercado Livre" />
 
         <br />
 

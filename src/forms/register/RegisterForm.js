@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button } from '../../components/Button/Button'
-import { ButtonSecondary } from '../../components/ButtonSecondary/ButtonSecondary'
-import { Input } from '../../components/Input/Input'
-import { Password } from '../../components/Password/Password'
+import { Button } from '../../components/common/Button/Button'
+import { ButtonSecondary } from '../../components/common/ButtonSecondary/ButtonSecondary'
+import { Input } from '../../components/common/Input/Input'
+import { Password } from '../../components/common/Password/Password'
 
 const RegisterForm = () => {
   return (

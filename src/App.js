@@ -1,7 +1,6 @@
 import React from 'react';
 import { ROUTES_CONFIG } from './routes/config';
 import Router from './routes/Router';
-import './components/style.scss';
 import * as serviceWorker from './serviceWorker';
 
 function App() {

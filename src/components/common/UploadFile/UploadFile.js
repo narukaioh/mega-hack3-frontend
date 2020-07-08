@@ -1,5 +1,5 @@
 import React from 'react'
-import UploadIcon from '../../icons/upload-icon.svg'
+import UploadIcon from '../../../icons/upload-icon.svg'
 import './upload-file.scss'
 
 export const UploadFile = ({ label, name }) => {
