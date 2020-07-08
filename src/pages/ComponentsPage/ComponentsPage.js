@@ -103,7 +103,7 @@ export const ComponentsPage = () => {
           CheckButton label 1
         </CheckButton>
         <CheckButton>
-          <span>CheckButton label 2 <a href="#">Link</a></span>
+          <span>CheckButton label 2 <a href="#todo">Link</a></span>
         </CheckButton>
       </div>
 
