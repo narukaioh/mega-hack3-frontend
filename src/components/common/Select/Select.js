@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import ChevronDown from '../../icons/chevron-down-ico.svg'
-import { InputBox } from '../../InputBox/InputBox'
+import ChevronDown from '../../../icons/chevron-down-ico.svg'
+import { InputBox } from '../InputBox/InputBox'
 import './select.scss'
 
 export const Select = ({ options, label, subtitle}) => {
