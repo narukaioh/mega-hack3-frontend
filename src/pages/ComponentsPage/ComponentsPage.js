@@ -20,6 +20,7 @@ import { CheckButton } from '../../components/CheckButton/CheckButton'
 import { Select } from '../../components/Select/Select'
 import { ButtonDefault } from '../../components/ButtonDefault/ButtonDefault'
 import { ButtonLight } from '../../components/ButtonLight/ButtonLight'
+import RegisterForm from '../../forms/register/RegisterForm'
 
 export const ComponentsPage = () => {
 
@@ -36,6 +37,10 @@ export const ComponentsPage = () => {
 
   return (
     <div className="container">
+
+      <Card title="Register Form">
+        <RegisterForm />
+      </Card>
 
       <Card title="Card title component">
 
