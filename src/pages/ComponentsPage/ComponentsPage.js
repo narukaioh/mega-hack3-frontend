@@ -19,7 +19,7 @@ import { TextArea } from '../../components/common/TextArea/TextArea'
 import { UploadFile } from '../../components/common/UploadFile/UploadFile'
 import { CheckButton } from '../../components/common/CheckButton/CheckButton'
 import { Select } from '../../components/common/Select/Select'
-import { ButtonDefault } from '../../components/common/ButtonDefault/ButtonDefault'
+import { ButtonInfo } from '../../components/common/ButtonInfo/ButtonInfo'
 import { ButtonLight } from '../../components/common/ButtonLight/ButtonLight'
 
 import RegisterForm from '../../forms/register/RegisterForm'
@@ -46,7 +46,7 @@ export const ComponentsPage = () => {
 
       <Card title="Card title component">
 
-        <ButtonDefault label="Button Default" />
+        <ButtonInfo label="Button Info" />
 
         <br />
 
