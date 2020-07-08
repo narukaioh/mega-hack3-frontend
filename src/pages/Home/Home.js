@@ -4,9 +4,11 @@ import RegisterForm from '../../forms/register/RegisterForm'
 
 const Home = () => {
   return(
-    <Card label="Formulário de cadastro" subtitle="Cadastre-se agora mesmo!">
-      <RegisterForm />
-    </Card>
+    <div className="container">
+      <Card label="Formulário de cadastro" subtitle="Cadastre-se agora mesmo!">
+        <RegisterForm />
+      </Card>
+    </div>
   )
 }
 
