@@ -1,0 +1,68 @@
+$buttonfontweight: bold;
+$buttonfontfamily:  Arial, Helvetica, sans-serif;
+$buttonbackground: rgb(170, 170, 170);
+$buttonborderradius: 3px;
+$buttonboxshadow: none;
+$buttonHoverboxshadow: $buttonboxshadow;
+$buttonHoverbackgroundcolor: darken($buttonbackground, 10%);
+$buttonfontcolor: #fff;
+
+// background colors
+$buttoncolorprimary: #007bff;
+$buttoncolorsecondary: #6c757d;
+$buttoncolorinfo: #17a2b8;
+$buttoncolorwarning: #ffc107;
+$buttoncolordanger: #dc3545;
+$buttoncolorlight: #f8f9fa;
+
+.button {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  background-color: $buttonbackground;
+  border: none;
+  border-radius: $buttonborderradius;
+  box-shadow: $buttonboxshadow;
+  cursor: pointer;
+  display: inline-block !important;
+  font-family: $buttonfontfamily;
+  font-weight: $buttonfontweight;
+  outline: none;
+  padding: 10px 25px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: $buttonfontcolor;
+
+  &:hover {
+    background-color: $buttonHoverbackgroundcolor;
+    box-shadow: $buttonHoverboxshadow;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &.primary {
+    background-color: $buttoncolorprimary;
+  }
+
+  &.secondary {
+    background-color: $buttoncolorsecondary;
+  }
+
+  &.info {
+    background-color: $buttoncolorinfo;
+  }
+
+  &.warning {
+    background-color: $buttoncolorwarning;
+  }
+
+  &.danger {
+    background-color: $buttoncolordanger;
+  }
+
+  &.light {
+    background-color: $buttoncolorlight;
+  }
+
+}

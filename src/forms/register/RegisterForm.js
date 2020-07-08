@@ -9,8 +9,7 @@ const RegisterForm = () => {
     <form className="register-form-container">
       <Input name="email" label="Email" />
       <Password name="password" label="Senha" />
-      <Button label="Enviar" />
-      <ButtonSecondary label="Limpar" />
+      <Button label="Enviar" /> <ButtonSecondary label="Limpar" />
     </form>
   )
 }
