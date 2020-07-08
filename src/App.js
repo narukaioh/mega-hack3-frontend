@@ -5,9 +5,9 @@ import * as serviceWorker from './serviceWorker';
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Router routes={ROUTES_CONFIG} />
-    </div>
+    </>
   );
 }
 
