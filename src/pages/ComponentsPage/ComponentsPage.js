@@ -8,7 +8,7 @@ import FileUpload from '../../icons/file-upload-icon.svg'
 import { Button } from '../../components/common/Button/Button'
 import { Card } from '../../components/common/Card/Card'
 import { CardIcon } from '../../components/common/CardIcon/CardIcon'
-import { Input } from '../../components/common/Input/Input'
+import { InputText } from '../../components/common/InputText/InputText'
 import { InputBox } from '../../components/common/InputBox/InputBox'
 import { Tag } from '../../components/common/Tag/Tag'
 import { Tags } from '../../components/common/Tags/Tags'
@@ -74,7 +74,7 @@ export const ComponentsPage = () => {
         
         <InputIcon icon={FileUpload} label="InputIcon label" placeholder="InputIcon placeholder" />
         
-        <Input label="Input label" placeholder="Input placeholder" />
+        <InputText label="Input label" placeholder="Input placeholder" />
       </Card>
 
       <Button label="Button Secondary" />

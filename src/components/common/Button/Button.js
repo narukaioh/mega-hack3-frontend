@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const Button = ({ label }) => {
-  return <button className="button primary">{label}</button>
+export const Button = ({ label, onClick }) => {
+  return <button onClick={onClick} type="button" className="button primary">{label}</button>
 }

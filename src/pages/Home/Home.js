@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from '../../components/common/Card/Card'
-import RegisterForm from '../../forms/register/RegisterForm'
+import RegisterForm from '../../forms/login/LoginForm'
 
 const Home = () => {
   return(
