@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import { Card } from "../../components/Card/Card";
 import { CardIcon } from "../../components/CardIcon/CardIcon";
 import { Tag } from "../../components/Tag/Tag";
@@ -61,6 +61,9 @@ export const OngPage = () => {
 
   return (
     <div className="container ong-page">
+      <div className="header-back">
+        <NavLink className="primary" to="/">Voltar para home</NavLink>
+      </div>
       <Card>
         <NeedsHeader content={{ image: "https://logos.flamingtext.com/City-Logos/Ong-Logo.webp", name, description }} />
         <IconLabel icon={TagIconOrange} label={subject} />

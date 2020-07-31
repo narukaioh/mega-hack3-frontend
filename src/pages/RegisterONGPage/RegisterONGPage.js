@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './register-ong-page.scss';
 // import { getProducts } from '../../services/products';
 import { Card } from '../../components/Card/Card';
@@ -62,6 +63,9 @@ export const RegisterONGPage = () => {
 
   return (
     <div className="container ong-form-page">
+      <div className="header-back">
+        <NavLink className="primary" to="/">Voltar para home</NavLink>
+      </div>
       <Card title="Informações da ONG">
         <div className="image-name">
           <UploadFile
