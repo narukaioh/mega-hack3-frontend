@@ -28,13 +28,10 @@ export const Home = () => {
             <img src={LoweIcon} alt="logo" />
           </div>
           <div>
-            <NavLink className="btn default" to="/donate">Sou doador</NavLink>
+            <NavLink className="btn default" to="/donate">Sou voluntário</NavLink>
             <NavLink className="btn light" to="/ongs">Sou ONG</NavLink>
           </div>
         </nav>
-        <div className="banner">
-          <h1>Doe para ONG com a certeza de que sua doação fez a diferença.</h1>
-        </div>
       </header>
       <section className="content">
 

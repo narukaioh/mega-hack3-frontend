@@ -50,3 +50,11 @@
     background: #e8ebee;
   }
 }
+
+.radio-button-inline {
+  display: flex;
+  
+  & > div {
+    margin-right: 25px;
+  }
+}
