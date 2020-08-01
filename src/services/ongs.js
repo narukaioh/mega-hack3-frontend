@@ -2,7 +2,8 @@ import client, { get } from "./client/client"
 
 export const getONGs = async () =>
   await get(`/ongs`).then((res) =>{
-    const result = res.ongs[0].map((ong) => {
+    const result = res.ongs.map((ong) => {
+      console.log(ong)
       return {
         id: ong.id,
         name: ong.name,
@@ -13,7 +14,7 @@ export const getONGs = async () =>
         subject: ong.cause,
       }
     })
-    return result[0] === null ? [] : result
+    return result === null ? [] : result
   })
 
 export const getONG = async (id) => await get(`ong/${id}`).then(res => {
@@ -21,63 +22,20 @@ export const getONG = async (id) => await get(`ong/${id}`).then(res => {
   return {
     id: ong.id,
     name: ong.name,
-    image: "https://altruismoeficaz.files.wordpress.com/2015/08/crianca3.jpg",
+    image: ong.logo,
     description: ong.description,
     locale: ong.city,
-    subject: ong.cause || "Ong",
-    link: "http://google.com.br/ongs",
+    subject: ong.cause,
+    link: ong.link,
     address: {
-      street: ong.address || "Avenida Paulista",
-      number: ong.number || "88",
-      cep: ong.cep || "99999-999",
+      street: ong.address,
+      number: ong.number,
+      cep: ong.cep,
       neighborhood: "Tijuca",
-      city: ong.city || "São Paulo",
-      state: ong.state || "SP",
+      city: ong.city,
+      state: ong.state,
     },
-    needs: [
-      {
-        title: "Kit Com 4 Pacotes Fraldas Pampers Atacado Frete Gratis",
-        quantity: 100,
-        link: "https://produto.mercadolivre.com.br/MLB-1424521706-kit-com-4-pacotes-fraldas-pampers-atacado-frete-gratis-_JM?searchVariation=50074976460&quantity=1#searchVariation=50074976460&position=1&type=item&tracking_id=26a99d68-2c4e-46c8-bea4-d089c7dd7ede",
-        date: "10/08/2020",
-        description: "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas.",
-        product: {
-          title: "Kit Com 4 Pacotes Fraldas Pampers Atacado Frete Gratis",
-          price: "R$ 128,00",
-          image: "http://mlb-s2-p.mlstatic.com/808351-MLB40762133514_022020-I.jpg"
-        }
-      },{
-        title: "Fralda Infantil Pampers Confort Sec",
-        quantity: 100,
-        link: "https://produto.mercadolivre.com.br/MLB-1394912193-fralda-infantil-pampers-confort-sec-_JM?quantity=1#origin=supermarket_carousel&from=search-frontend",
-        date: "10/08/2020",
-        description: "Solicitamos fraldar pampers, pois muitas das crianças tem alergias á outras marcas.",
-        product: {
-          title: "Fralda Infantil Pampers Confort Sec",
-          price: "R$ 62,79",
-          image: "http://mlb-s2-p.mlstatic.com/808351-MLB40762133514_022020-I.jpg"
-        }
-      }
-    ],
-    billets: [
-      {
-        title: "Conta de Luz",
-        value: "R$ 500,03",
-        recurrency: "",
-        only: "",
-        date: "10/08/2020",
-        description: "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
-      },
-      {
-        title: "Conta de Água",
-        value: "R$ 50,03",
-        recurrency: "",
-        only: "",
-        date: "10/08/2020",
-        description: "Luz é um fato essencial para o funionamento de qualquer lugar e é difícil arrecadar dinheiro para pagar boletos."
-      }
-    ],
-    tags: ong.tags || []
+    tags: ong.tags
   };
 })
 
@@ -111,7 +69,7 @@ export const postONG = (ong) => {
 
 export const searchONGs = async (content) =>
   await get(`ongs?search=${content}`).then((res) => {
-    const result = res.ongs[0].map((ong) => {
+    const result = res.ongs.map((ong) => {
       return {
         id: ong.id,
         name: ong.name,
@@ -123,5 +81,5 @@ export const searchONGs = async (content) =>
       }
     })
 
-    return result[0] === null ? [] : result
+    return result === null ? [] : result
   })

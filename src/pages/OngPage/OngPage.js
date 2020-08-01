@@ -6,8 +6,8 @@ import { Tag } from "../../components/Tag/Tag";
 import { Tags } from "../../components/Tags/Tags";
 import Shop from "../../icons/shop-icon.svg";
 import Document from "../../icons/document.svg";
-import TagIconOrange from "../../icons/tag-icon-orange.svg";
-import FileUpload from "../../icons/file-upload-icon.svg";
+import TagIconRed from "../../icons/tag-icon-red.svg";
+import FileUpload from "../../icons/file-upload-red-icon.svg";
 import { getONG } from "../../services/ongs";
 import { NeedsHeader } from "../../components/Needs/NeedsHeader";
 import { Address } from "../../components/Address/Address";
@@ -66,7 +66,7 @@ export const OngPage = () => {
       </div>
       <Card>
         <NeedsHeader content={{ image: "https://logos.flamingtext.com/City-Logos/Ong-Logo.webp", name, description }} />
-        <IconLabel icon={TagIconOrange} label={subject} />
+        <IconLabel icon={TagIconRed} label={subject} />
         <p className="ong-page-description">{description}</p>
         <Address content={{ address }} />
         <IconLabel icon={FileUpload}>

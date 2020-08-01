@@ -4,7 +4,7 @@ import { getONGs, searchONGs } from '../../services/ongs'
 import { NavLink } from 'react-router-dom'
 import { Search } from '../../components/Search/Search'
 import { Needs } from '../../components/Needs/Needs'
-import LoweIcon from '../../icons/lowe-icon.svg'
+import ActIcon from '../../icons/act-icon.svg'
 
 export const Home = () => {
   
@@ -25,7 +25,7 @@ export const Home = () => {
       <header className="header-home">
         <nav>
           <div>
-            <img src={LoweIcon} alt="logo" />
+            <img src={ActIcon} alt="logo" />
           </div>
           <div>
             <NavLink className="btn default" to="/donate">Sou voluntário</NavLink>
